@@ -11,7 +11,7 @@ async function handleUserInput() {
     showTypingIndicator(true);
 
     try {
-        const res = await fetch("http://localhost:5000/ask", {
+        const res = await fetch("https://chatbot-i968.onrender.com/ask", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ question: query }),
